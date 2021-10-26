@@ -1,0 +1,33 @@
+.dashLine{
+    width: 2px;
+    height: 18px;
+    margin-top: 10px;
+    background-color: white;
+}
+.navFont{
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 19px;  
+}
+.navBg{
+    background-color: black;
+}
+.navPadding{
+    padding: 16px;
+}
+.navBoldFont{
+    font-weight: bold;
+}
+.spotifyLogoFont{
+    font-size: 30px;
+}
+.spotifyLogo{
+    margin-top: -15px;
+}
+
+.navbar-nav > li > a:hover{
+    color: #1EC62E !important;
+}
+
+.navHeight{
+    height: 100px;
+}

@@ -1,0 +1,72 @@
+.footer {
+  /*  position: fixed;*/
+    
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    /*text-align: center;*/
+ }
+
+ .footerFont{
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    font-size: 19px;  
+}
+
+ .outerFlex{
+     display: flex;
+     flex-direction: row;
+ }
+
+ .column1{
+     width: 15%;
+ }
+
+ .column2{
+     width: 60%;
+     text-align: left;
+ }
+ .column3{
+     width: 20%;
+     text-align: center;
+     color: white;
+ }
+
+ .greyFontSize{
+     font-size: 16px;
+ }
+
+ .iconMargin{
+     margin-top: 20px;
+ }
+
+ .iconBackground{
+     background-color: #222326;
+ }
+
+ .column2Grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+ }
+
+ .innerGrid{
+     display: grid;
+     grid-template-columns: auto auto auto;
+ }
+
+ .greenHover:hover{
+    color: #1EC62E !important;
+ }
+
+ .sizeDiv{
+     width: 70px;
+     height: 70px;
+ }
+
+ .iconCircle{
+     border-radius: 50%;
+ }
+
+ .flexEnd{
+     display: flex;
+     flex-direction: column;
+ }

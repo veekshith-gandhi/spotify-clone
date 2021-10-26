@@ -1,0 +1,127 @@
+@import url("./footer.css");
+@import url("./navbar.css");
+
+.mainContainer {
+    background-color: rgb(41, 65, 171);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+    background-position: center top 30%;
+    background-repeat: no-repeat;
+    background-size: 195%;
+    height: 100vh;  /*100% of the viewport height*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;/*The box-align CSS property specifies how an element aligns 
+    its contents across its layout in a perpendicular direction. The effect of the property 
+    is only visible if there is extra space in the box.*/
+    align-items: center;
+    -webkit-box-pack: center;/*-webkit-box-pack CSS properties specify how a -webkit-box 
+    packs its contents in the direction of its layout.*/
+    justify-content: center;/*justify-content property defines how the browser distributes 
+    space between and around content items along the main-axis of a flex container, and the 
+    inline axis of a grid container.*/
+    overflow: hidden;/*The overflow CSS shorthand property sets the desired behavior for an 
+    element's overflow — i.e. when an element's content is too big to fit in its block formatting 
+    context — in both directions*/
+    
+}
+
+.mainDivHeading{
+    box-sizing: border-box;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    -webkit-tap-highlight-color: transparent; /*-webkit-tap-highlight-color is a non-standard CSS 
+    property that sets the color of the highlight that appears over a link while it's being tapped.
+    Here,transparent is given for removing the highlight*/
+    display: block;
+    padding: 0px 0px 0.67em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 800;
+    letter-spacing: -7.85px;/*The letter-spacing CSS property sets the horizontal spacing behavior between 
+    text characters. Positive values of letter-spacing causes characters to spread farther apart, while 
+    negative values of letter-spacing bring characters closer together.*/
+    color: #1ED760;
+    font-size: 7rem;
+    width: 750px;
+}
+
+.marginNeg{
+    margin-top: -10px;
+}
+
+.linkColor{
+    color: rgb(41, 65, 171);
+    text-align: center;
+    
+    font-weight: bold;
+}
+.myButton > a{
+    text-decoration: none;
+}
+
+.myButton{
+    width: 230px;
+    height: 60px;
+    border-radius: 200px;
+    font-size: inherit;
+    padding: 14px 32px;
+    border: 0px transparent;
+    background-color:#1ED760;
+}
+.myButton:hover{
+    /*width: 235px;
+    height: 65px; */
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .mainHeader{
+        width: 754px;
+        font-size: 80px;
+        line-height: 104px;
+        padding-bottom: 24p
+    }
+    .smallHeading {
+        font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+        width: 400px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 180px;
+        padding-bottom: 40px;
+        color: #1ED760
+    }
+    .mainContainer{
+        background-image: url(https://www-growth.scdn.co/static/home/bursts-tablet.svg);
+        background-size: 163%;
+        background-position: right 40% center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+    .mainDivHeading{
+        letter-spacing: -4.85px
+    }
+} 
+
+
+@media only screen and (min-width: 600px) {
+    .mainContainer{
+        background-image: url(https://www-growth.scdn.co/static/home/bursts-tablet.svg);
+        background-size: 153%;
+        background-position: right 40% center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .smallHeading{
+        font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+        width: 550px;
+        font-size: 24px;
+        line-height: 24px;
+        padding-bottom: 40px;
+        margin-left: 90px;
+        margin-top: -30px;
+        color: #1ED760
+    }
+
+    
+} 
