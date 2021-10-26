@@ -1,0 +1,64 @@
+.signup-main-container {
+  width: 34%;
+  margin: auto;
+  text-align: center;
+}
+.spotify-logo-signup {
+  margin-top: 30px;
+  display: inline-flex;
+}
+.spotify-h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+.signup-fb a {
+  text-decoration: none;
+}
+.signup-fb :hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.signup-fb {
+  /* border: 1px solid blue; */
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #1877f2;
+  padding: 5px;
+}
+.signup-fb-h1 {
+  text-decoration: none;
+  margin: 0;
+  color: aliceblue;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 9px;
+}
+.span-or-div {
+  margin-top: 14px;
+}
+.span-or {
+  margin-top: 30px;
+  letter-spacing: 3px;
+}
+.signup-form {
+  margin-top: 20px;
+}
+.signup-email {
+  float: left;
+}
+.label-signup {
+  float: left;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 28px;
+  font-weight: bolder;
+}
+.signup-input {
+  height: 40px;
+  width: 200%;
+}
+.clear {
+  clear: both;
+}
