@@ -10,6 +10,7 @@ let multipleHtmlPlugins = templates.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./public/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
+    chunks: ["main"],
   });
 });
 
