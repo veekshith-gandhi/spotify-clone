@@ -1,4 +1,4 @@
-.signup-main-container {
+/* .signup-main-container {
   width: 34%;
   margin: auto;
   text-align: center;
@@ -21,7 +21,7 @@
   transition: 0.7s;
 }
 .signup-fb {
-  /* border: 1px solid blue; */
+  
   border-radius: 40px;
   display: inline-block;
   background-color: #1877f2;
@@ -61,4 +61,56 @@
 }
 .clear {
   clear: both;
+} */
+
+.signup-main-container {
+  font-family: Circular Spotify;
+}
+
+.signup-main-container > .container {
+  max-width: 450px;
+}
+
+.heading__signup {
+  font-weight: bolder;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+}
+
+.pop-up-btn-animate:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: rgb(127, 127, 127);
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
 }

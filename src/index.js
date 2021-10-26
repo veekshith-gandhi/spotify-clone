@@ -1,3 +1,8 @@
-import "./styles/style.css";
-import * as Home from "./home";
-console.log("home page");
+import { signUpcontroller } from './auth/signup';
+import './styles/style.css';
+
+window.onload = () => {
+  if (window.location.href.includes('signup')) {
+    return signUpcontroller();
+  }
+};
