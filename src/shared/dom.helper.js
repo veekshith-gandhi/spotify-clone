@@ -1,8 +1,8 @@
-import { DomDateHelper } from './dom.date';
+import { DomDateHelper } from "./dom.date";
 
 export class DOMElementGenerator extends DomDateHelper {
-  static createDivElement(className = '', id = '', child) {
-    const divTag = document.createElement('div');
+  static createDivElement(className = "", id = "", child) {
+    const divTag = document.createElement("div");
     if (className) {
       divTag.className = className;
     }
@@ -16,8 +16,8 @@ export class DOMElementGenerator extends DomDateHelper {
     return divTag;
   }
 
-  static createImageElement(src = '', className = '', width = '', height = '') {
-    const img = document.createElement('img');
+  static createImageElement(src = "", className = "", width = "", height = "") {
+    const img = document.createElement("img");
     if (className) {
       img.className = className;
     }
@@ -31,12 +31,12 @@ export class DOMElementGenerator extends DomDateHelper {
     return img;
   }
 
-  static createButtonElement(name = '', bgColor = '', className = '') {
-    const button = document.createElement('button');
+  static createButtonElement(name = "", bgColor = "", className = "") {
+    const button = document.createElement("button");
     // Default styles related to app.
-    button.style.borderRadius = '500px';
+    button.style.borderRadius = "500px";
     button.className =
-      'font-weight-bold pop-up-btn-animate btn btn-primary d-block ';
+      "font-weight-bold pop-up-btn-animate btn btn-primary d-block ";
 
     button.textContent = name;
 
@@ -51,8 +51,8 @@ export class DOMElementGenerator extends DomDateHelper {
     return button;
   }
 
-  static createHorizontalRuleWithTitle(title = '') {
-    const hrDiv = this.createDivElement('hr-with-title strike mt-4 mb-4');
+  static createHorizontalRuleWithTitle(title = "") {
+    const hrDiv = this.createDivElement("hr-with-title strike mt-4 mb-4");
 
     hrDiv.innerHTML = `
         <span>${title}</span>
@@ -62,23 +62,23 @@ export class DOMElementGenerator extends DomDateHelper {
   }
 
   static formInputElement(
-    label = '',
-    placeholder = '',
-    errMsg = '',
-    type = '',
-    formInputName = ''
+    label = "",
+    placeholder = "",
+    errMsg = "",
+    type = "",
+    formInputName = ""
   ) {
-    const inputContainer = this.createDivElement('form-group');
-    const labelTag = document.createElement('label');
-    const errorTag = document.createElement('small');
+    const inputContainer = this.createDivElement("form-group");
+    const labelTag = document.createElement("label");
+    const errorTag = document.createElement("small");
 
     labelTag.textContent = label;
-    errorTag.className = 'form-text text-danger mt-0';
+    errorTag.className = "form-text text-danger mt-0";
 
-    const input = document.createElement('input');
+    const input = document.createElement("input");
 
-    input.type = type || 'text';
-    input.className = 'form-control';
+    input.type = type || "text";
+    input.className = "form-control";
     input.placeholder = placeholder;
     input.name = formInputName;
 
@@ -88,7 +88,7 @@ export class DOMElementGenerator extends DomDateHelper {
           errorTag.textContent = errMsg;
           inputContainer.appendChild(errorTag);
         } else {
-          errorTag.textContent = '';
+          errorTag.textContent = "";
         }
       };
     }

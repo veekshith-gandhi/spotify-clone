@@ -1,8 +1,8 @@
-import { signUpcontroller } from './auth/signup';
-import './styles/style.css';
+import { signUpcontroller } from "./auth/signup";
+import "./styles/style.css";
 
 window.onload = () => {
-  if (window.location.href.includes('signup')) {
+  if (window.location.href.includes("signup")) {
     return signUpcontroller();
   }
 };
