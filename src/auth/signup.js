@@ -1,4 +1,5 @@
 import { DOMElementGenerator } from "../shared/dom.helper";
+import { handleSignUp } from "./api";
 
 const model = {
   formDataValues: [
@@ -89,7 +90,7 @@ export const signUpcontroller = () => {
 
   //   Form
   const formContainer = view.formContainer;
-  formContainer.setAttribute("autocomplete", "off");
+  formContainer.setAttribute("autocomplete", "on");
 
   model.formDataValues.forEach((form) => {
     formContainer.appendChild(
@@ -101,6 +102,12 @@ export const signUpcontroller = () => {
         form.name
       )
     );
+  });
+
+  formContainer.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    const formData = new FormData(formContainer);
+    handleSignUp(formData);
   });
 
   formContainer.appendChild(

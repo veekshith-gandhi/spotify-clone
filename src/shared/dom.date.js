@@ -106,7 +106,9 @@ export class DomDateHelper {
 
     const input = document.createElement("input");
     input.type = "radio";
-    input.name = "aradio";
+    input.name = "gender";
+    input.value = "male";
+
     input.onclick = "changeEvent()";
     input.className = "mr-2 ";
     maleContainer.appendChild(input);
@@ -122,7 +124,8 @@ export class DomDateHelper {
 
     const input = document.createElement("input");
     input.type = "radio";
-    input.name = "aradio";
+    input.name = "gender";
+    input.value = "female";
     input.className = "mr-2";
     femaleContainer.appendChild(input);
 
@@ -137,8 +140,8 @@ export class DomDateHelper {
 
     const input = document.createElement("input");
     input.type = "radio";
-    input.name = "aradio";
-    input.value = "ra";
+    input.name = "gender";
+    input.value = "non-binary";
     input.className = "mr-2";
     nonBinaryContainer.appendChild(input);
 
