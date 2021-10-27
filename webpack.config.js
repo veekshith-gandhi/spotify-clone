@@ -5,11 +5,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
-let templates = ["index", "signup"];
+let templates = ["index", "signup","download"];
 let multipleHtmlPlugins = templates.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./public/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
+    chunks: ["main"],
   });
 });
 
