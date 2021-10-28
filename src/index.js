@@ -1,4 +1,5 @@
 import { signUpcontroller } from "./auth/signup";
+import "./auth/login";
 import "./styles/style.css";
 
 window.onload = () => {

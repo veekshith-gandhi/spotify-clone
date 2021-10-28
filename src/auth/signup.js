@@ -72,7 +72,7 @@ const view = {
    target="_blank" rel="noopener noreferrer">Spotify's Privacy Policy</a>.
    </span>`,
   haveAnAccount: `<span class="LinkContainer text-center d-block mb-5">Have an account? 
-   <a href="https://accounts.spotify.com?continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F">Log 
+   <a href="./login.html">Log 
    in</a>.</span>`,
 };
 
