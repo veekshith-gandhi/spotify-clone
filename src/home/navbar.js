@@ -20,11 +20,9 @@ function Navbar() {
           <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4 temp-dist" href="download.html">Download</a></li>
           <li class="nav-item active list-inline-item"><div class="dashLine"></div></li>
 
-          <li class="nav-item active list-inline-item"><a class="nav-link text-light ml-4 mr-2 temp-dist" href="signup.html">Sign Up</a></li>
-          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4 temp-dist" href="">Log in</a></li>
 
           <li class="nav-item active list-inline-item"><a class="nav-link text-light ml-4 mr-2" href="./signup.html">Sign Up</a></li>
-          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="">Log in</a></li>
+          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="./login.html">Log in</a></li>
 
         </ul>
       </div>
