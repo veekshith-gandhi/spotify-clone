@@ -6,8 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
-let templates = ["index", "signup", "login", "sorce","download","support"];
-
+let templates = ["index", "signup", "login", "sorce","download","support","premimum"];
 let multipleHtmlPlugins = templates.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./public/${name}.html`, // relative path to the HTML files

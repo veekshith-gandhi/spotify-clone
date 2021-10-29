@@ -1,0 +1,203 @@
+/* @import url("../salakhaCSS/index.css"); */
+.hero{
+    background-color: rgb(255, 200, 100);
+    color: black;
+    height: 480px;
+    display: flex;
+}
+.hero > div:nth-child(1){
+    width: 70%;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.hero > div:nth-child(2){
+    width: 30%;
+    margin-top: 50px;
+    margin-right: 5%;
+}
+.img > img{
+    /* background-image: url(https://i.scdn.co/image/ab678e040000ed3a428143ebcee76dfb7eb59637); */
+    width: 400px;
+}
+.premiumLink{
+    color: white;
+    font-size: 14px;
+    letter-spacing : 2px;
+    line-height: 1;
+    text-align: center;
+    padding : 16px 48px;
+}
+.premiumBtn{
+    height: 48px;
+    padding: 0px;
+    background-color: black;
+    width: max-content;
+}
+.btns > .premiumBtn:nth-child(1) > .premiumLink:hover{
+    color: white;
+}
+.btns > button:nth-child(2){
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.btns > button:nth-child(2) > .premiumLink{
+    color: black;
+}
+.hero > div > h1{
+    font-size: 40px;
+}
+.sub-hero{
+    background-color: rgb(180, 155, 200);
+    text-align: center;
+    color: black;
+    height: 413px;
+}
+.sub-hero > div > .premiumBtn > .premiumLink{
+    color: rgb(180, 155, 200);
+}
+.sub-hero > div >p{
+    font-size: 12px;
+}
+.sub-hero > div > h4,button,p{
+    margin:20px 0px;
+}
+.sub-hero > div > h1{
+    padding-top: 60px;
+}
+.white-section{
+    text-align: center;
+    height: 500px;
+}
+.white-section > div{
+    margin: 70px 0px;
+}
+.flex{
+    display: flex;
+    padding: 30px 0px;
+    max-width: 90%;
+    margin: auto;
+}
+.flex-box{
+    width: 25%;
+    padding: 0px 4%;
+}
+.flex-box > p{
+    font-size: 16px;
+}
+.flex-box > img{
+    width: 142px;
+    height: 142px;
+    margin: 30px 0px;
+}
+.gray-section{
+    background-color: #eeeeee;
+    height: 830px;
+    text-align: center;
+}
+#payment-platform{
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+#payment-platform > div > img{
+    width: 29px;
+    height: 20px;
+    margin: 5px;
+}
+.cards-container{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.card{
+    height: 500px;
+    text-align: start;
+    border-radius: 15px;
+    margin: 0.5%;
+    padding: 15px;
+    width: 23%;
+}
+.card > button{
+    margin: auto;
+}
+.card > .premiumBtn > .premiumLink:hover{
+    color: white;
+}
+/* .card > div:nth-child(1){ */
+    /* height: 300px; */
+    /* padding: 15px; */
+/* } */
+/* .card > div > h4,p{ */
+    /* margin: 0px; */
+/* } */
+
+#hr{
+    height: 1px;
+    background:rgb(204, 204, 204);
+    border-radius: 1px;
+}
+#offer{
+    width: 90px;
+    color: white;
+    background-color: rgb(46, 119, 208);
+    border-radius: 5px;
+}
+#offer > p{
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0px;
+    text-align: center;
+}
+.upper-part{
+    height: 130px;
+}
+.upper-part > h4,p{
+    margin: 0px;
+    line-height:22px;
+}
+.lower-part{
+    height: 150px;
+}
+.bullets{
+    display: flex;
+}
+.bullets > p{
+    margin: 0px;
+}
+#tnc{
+    font-size: 12px;
+}
+.students-offer{
+    width: 60%;
+    background-color: white;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+}
+.students-offer > div:nth-child(1){
+    width: 80%;
+    text-align: start;
+    padding: 10px;
+}
+.students-offer > div:nth-child(2) > .premiumBtn{
+    background-color: transparent;
+    margin-right: 20px;
+    border: 2px black solid;
+}
+.students-offer > div:nth-child(2) > .premiumBtn > .premiumLink{
+    color: black;
+}
+body > .white-section:nth-child(2)>div > .flex{
+    /* /* font-size:21px * */
+    display: flex;
+    flex-direction: column-reverse;
+}
+.white-section:nth-child(2)>h3{
+    font-size:3px;
+}
+.white-section>div>.flex>.flex-box>h3{
+    font-size: 1.5rem;
+}
