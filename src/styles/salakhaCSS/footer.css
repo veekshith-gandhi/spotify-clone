@@ -1,7 +1,9 @@
 .footer {
+
     width: 100%;
     height: fit-content;
     background-color: black;
+
  }
 
  .footerFont{
@@ -29,7 +31,9 @@
  }
 
  .greyFontSize{
+
      font-size: 15px;
+
  }
 
  .iconMargin{

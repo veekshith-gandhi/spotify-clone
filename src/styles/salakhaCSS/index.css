@@ -60,15 +60,18 @@
 }
 
 .myButton{
+
     width: 200px;
     height: 60px;
     border-radius: 200px;
     font-size: 14px;
+
     padding: 14px 32px;
     border: 0px transparent;
     background-color:#1ED760;
 }
 .myButton:hover{
+
     transform: scale(1.1);
 }
 
