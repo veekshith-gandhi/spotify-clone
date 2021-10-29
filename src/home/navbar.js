@@ -15,12 +15,16 @@ function Navbar() {
     
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto navBoldFont" style="color: white; id="list">
+
           <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="premium.html">Premium</a></li>
-          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="">Support</a></li>
-          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="">Download</a></li>
+          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4 temp-dist" href="support.html">Support</a></li>
+          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4 temp-dist" href="download.html">Download</a></li>
           <li class="nav-item active list-inline-item"><div class="dashLine"></div></li>
+
+
           <li class="nav-item active list-inline-item"><a class="nav-link text-light ml-4 mr-2" href="./signup.html">Sign Up</a></li>
-          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="">Log in</a></li>
+          <li class="nav-item active list-inline-item"><a class="nav-link text-light mr-4" href="./login.html">Log in</a></li>
+
         </ul>
       </div>
   </nav>`;

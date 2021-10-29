@@ -1,4 +1,243 @@
 .signup-main-container {
+
+  font-family: Circular Spotify;
+}
+
+.signup-main-container > .container {
+  max-width: 450px;
+}
+
+.heading__signup {
+  font-weight: bolder;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+}
+
+.pop-up-btn-animate:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: rgb(127, 127, 127);
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.signup__btn {
+  border: none;
+  letter-spacing: 1px;
+  font-family: Circular Spotify;
+  color: black;
+  font-size: large;
+  margin-top: 20px !important ;
+}
+.LinkContainer > a {
+  color: #1ed760;
+  letter-spacing: -0.04em;
+}
+
+/* login */
+.login-main-container {
+  display: block;
+}
+.login-logo {
+  margin: auto;
+  display: block;
+}
+.login-app-container {
+  width: 30%;
+
+  margin: auto;
+}
+.login-fb {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #3b5998;
+  color: aliceblue;
+  font-family: system-ui;
+  justify-content: center;
+}
+.login-fb:hover,
+.login-google:hover,
+.login-num:hover,
+.login-spotify:hover,
+.login-apple:hover,
+.login-btn-signup:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
+
+.login-apple {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #000;
+  color: aliceblue;
+  font-family: system-ui;
+  justify-content: center;
+}
+.login-google {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 20px;
+  /* background-color: #000; */
+  border: none;
+  color: rgb(23, 34, 44);
+  font-family: system-ui;
+  justify-content: center;
+}
+.login-num {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  /* background-color: #000; */
+  color: rgb(34, 42, 49);
+  font-family: system-ui;
+  justify-content: center;
+}
+.login-spotify {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  /* background-color: #000; */
+  color: rgb(34, 42, 49);
+  font-family: system-ui;
+  justify-content: center;
+}
+.login-input-fields {
+  width: 30%;
+  margin: auto;
+}
+.login-input {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 10px;
+}
+.login-checkbox > div {
+  margin-top: 10px;
+  display: flex;
+}
+.login-checkbox {
+  display: inline-block;
+  margin-top: 20px;
+}
+.login-btn-signup {
+  float: right;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 156px;
+  height: 40px;
+  background: #1ed760;
+  color: white;
+  border: none;
+}
+.login-checkbox-main {
+  display: inline-block;
+}
+.login-spotify-main {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* sorce */
+.sorce-main-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.sorce-container-right {
+  min-width: 85%;
+  border: 1px solid black;
+}
+.sorce-container-left {
+  background-color: rgb(0, 0, 0);
+  min-width: 250px;
+  min-height: 550px;
+}
+.src-spotify-logo {
+  min-width: 200px;
+  filter: invert(100%);
+  padding: 20px;
+}
+.src-home {
+  filter: invert(100%);
+  font-size: unset;
+  font-family: inherit;
+  font-weight: 500;
+  margin-left: 13px;
+}
+.src-home-logo {
+  filter: invert(100%);
+  width: 27px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.src-components {
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+.src-btn-add {
+  width: 30px;
+}
+.src-add-btn {
+  filter: invert(100%);
+  margin-left: 18px;
+}
+.src-btn-list {
+  margin-top: 45px;
+}
+.src-btn-list > div {
+  margin-bottom: 20px;
+}
+.src-components:hover {
+  background-color: rgb(75, 66, 69);
+
   width: 34%;
   margin: auto;
   text-align: center;
@@ -61,4 +300,5 @@
 }
 .clear {
   clear: both;
+
 }

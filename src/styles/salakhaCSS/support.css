@@ -1,0 +1,362 @@
+@media only screen and (min-width: 786px) {
+    .mainSupportContainer{
+        background-image: url(https://support.scdn.co/web/_next/static/assets/f5e2035/search-desktop.webp);
+        background-size: 95%;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .fontSupport{
+        padding: 80px 0 40px;
+        font-size: 64px;
+        line-height: 72px;
+        font-weight: 700;
+    }
+    .inputContain{
+        width: 772px;
+        height: 52px;
+        margin: auto;
+    }
+    
+    .lastFontSize{
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        color: black;
+    }
+
+    .lastParaSize{
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .lastParaDiv{
+        width: 500px;
+        height: fit-content;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .mainSupportContainer{
+        background-image: url(https://support.scdn.co/web/_next/static/assets/f5e2035/search-desktop.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .fontSupport{
+        padding: 80px 0 40px;
+        font-size: 44px;
+        line-height: 72px;
+        font-weight: 700;
+    }
+    .inputContain{
+        width: 60%px;
+        height: 52px;
+        margin: auto;
+    }
+    .lastFontSize{
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    .lastParaSize{
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+    }
+    
+    .lastParaDiv{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .mainSupportContainer{
+        background-image: url(https://support.scdn.co/web/_next/static/assets/f5e2035/search-desktop.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0 0px 0px;
+        background-color: #052a56;
+        height: fit-content;
+    }
+}
+
+.mainSupportContainer{
+    padding: 0 8px 24px;
+    background-color: #052a56;
+    height: fit-content;
+}
+
+.headingSupport{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+}
+
+.searchContain{
+    position: relative;
+    width: 100%;
+}
+
+.searchBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    color: #575757;
+    left: 12px;
+}
+
+.searchInputBox{
+    appearance: none;
+    border: 0px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    padding: 14px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #878787;
+}
+
+.temp{
+    border-radius: 4px;
+    margin-bottom: 24px;
+    padding-left: 48px;
+}
+
+.inputIcon{
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+    
+
+@media only screen and (max-width: 986px){
+    .noShow{
+        display: block;
+    }
+    .dontDisplay{
+        display: none;
+    }
+    .firstDivFlex{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .displayAfter{
+        display: block;
+    }
+    .fontSupport{
+        padding: 80px 0 40px;
+        font-size: 44px;
+        line-height: 72px;
+        font-weight: 700;
+    }
+    .showAfterFullScreen{
+        display: block;
+    }
+    .showAtFullScreen{
+        display: none;
+    }
+    .scndFlexContainer{
+        display: flex;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .dropdowns{
+        width: 100%;
+        height: 70px;
+    }
+    .noShow{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .space{
+        margin-top: 6.7px;
+    }
+    .boxHead{
+        font-size: 22px;
+        line-height: 32px;
+        padding-left: 25px;
+        padding-top: 20px;
+        font-weight: bold;
+        color: black;
+        margin-top: -9px;
+    }
+
+    .svgDim{
+        margin-top: 25px;
+        margin-left: 100px;
+    }
+    
+    .borderBottom{
+        border-bottom: 1px solid rgb(196, 196, 196);
+    }
+}
+
+@media only screen and (min-width: 986px){
+    .firstDivFlex{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+        text-align: center;
+    }
+    .noShow{
+        display: block;
+    }
+    .noShowSol{
+        display: none;
+    }
+    .inputContain{
+        width: 772px;
+        height: 52px;
+        margin: auto;
+    }
+    .seconSupportContainer{
+        padding: 30px 0 20px;
+        background-color: #EEEEEE;
+    }
+
+    .cardBoxesHeight{
+        width: 330px;
+        height: fit-content;
+    }
+    .scndFlexContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 11%;
+    }
+    
+    .cardBoxes{
+        width: 330px;
+        height: 260px;
+    }
+    .boxHead{
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 10%;
+        font-weight: bold;
+        color: black;
+        margin-top: -9px;
+    }
+
+    .showAfterFullScreen{
+        display: none;
+    }
+    
+}
+
+.boxSupport{
+    width: 250px;
+    height: 80px;
+}
+
+.headsSupp{
+    color: white;
+    margin: 8px 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.paraSupp{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.mainSupportContainer{
+    background-image: url(https://support.scdn.co/web/_next/static/assets/f5e2035/search-desktop.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.paraSupp:hover{
+    color: white;
+}
+
+
+.greenListLink{
+    margin-top: 20px;
+}
+
+.greenListLink > li > a{
+    color: #117A37;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.greenListLink > li > a:hover{
+    text-decoration: underline;
+    color: #117A37;
+}
+
+.distLink{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.myButtonFindAnswers{
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    color: black;
+    border: 0px;
+    border-radius: 200px;
+}
+
+.myButtonFindAnswers:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.buttonDimen{
+    width: 160px;
+    margin: auto;
+}
+

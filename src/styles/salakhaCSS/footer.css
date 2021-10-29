@@ -1,10 +1,9 @@
 .footer {
-  /*  position: fixed;*/
-    
+
     width: 100%;
     height: fit-content;
     background-color: black;
-    /*text-align: center;*/
+
  }
 
  .footerFont{
@@ -32,7 +31,9 @@
  }
 
  .greyFontSize{
-     font-size: 16px;
+
+     font-size: 15px;
+
  }
 
  .iconMargin{
@@ -69,4 +70,40 @@
  .flexEnd{
      display: flex;
      flex-direction: column;
+ }
+
+ #smallLinks > li > a:hover{
+    color: #1EC62E !important;
+ }
+
+ .marginEnd{
+     margin-left: 215px;
+ }
+
+ .marginNeg{
+    margin-top: -25px;
+}
+ @media only screen and (max-width: 968px) {
+    .outerFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    .sizeDiv{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    .marginEnd{
+        margin-left: 15px;
+    }
+    .marginBeg{
+        margin-top: 20px;
+    }
+ }
+
+ @media only screen and (max-width: 600px) {
+    .column2Grid{
+        display: flex;
+        flex-direction: column;
+     }
  }
