@@ -24,10 +24,34 @@
     margin-top: -15px;
 }
 
+
 .navbar-nav > li > a:hover{
     color: #1EC62E !important;
 }
 
 .navHeight{
     height: 100px;
+}
+
+@media only screen and (max-width: 850px) {
+    .navFont{
+        font-size: 16px;  
+    }
+    .spotifyLogoFont{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .navFont{
+        font-size: 15px;  
+    }
+    .spotifyLogoFont{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .temp-dist{
+        margin-right: -50px;
+        margin-left: -10px;
+    }
 }
