@@ -2,7 +2,7 @@ function handleLoginBtn() {
   const loginBtn = document.querySelector(".login-btn-signup");
   const email = document.querySelector(".login-email");
   const password = document.querySelector(".login-password");
-  loginBtn.addEventListener("click", function () {
+  loginBtn.addEventListener("click", () => {
     handleLogindetails(email.value, password.value);
   });
 }
