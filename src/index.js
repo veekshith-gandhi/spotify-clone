@@ -19,6 +19,9 @@ window.onload = () => {
     console.log("im in download");
     return navbarController();
   }
+  if (window.location.href.includes("premium")){
+    return navbarController();
+  }
   if (
     window.location.href == "http://localhost:8080/" ||
     window.location.href == "http://localhost:8080/index.html"
