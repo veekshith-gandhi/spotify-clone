@@ -5,12 +5,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
-let templates = ["index", "signup", "login", "sorce"];
+
+let templates = ["index", "signup", "login", "sorce","download","support"];
+
 let multipleHtmlPlugins = templates.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./public/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
+
     chunks: ["main"], //which chunk shoul i append to the current html
+
   });
 });
 
