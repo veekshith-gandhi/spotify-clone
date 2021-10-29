@@ -18,5 +18,3 @@ function handleLogindetails(email, password) {
       });
     });
 }
-
-window.addEventListener("load", handleLoginBtn);
