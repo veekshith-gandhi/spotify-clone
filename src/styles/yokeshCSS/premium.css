@@ -59,7 +59,7 @@
 .sub-hero > div >p{
     font-size: 12px;
 }
-.sub-hero > div > h4,button,p{
+.sub-hero > div > h4,.sub-hero > div > button,.sub-hero > div > p{
     margin:20px 0px;
 }
 .sub-hero > div > h1{
@@ -152,7 +152,7 @@
 .upper-part{
     height: 130px;
 }
-.upper-part > h4,p{
+.upper-part > h4,.upper-part > p{
     margin: 0px;
     line-height:22px;
 }
