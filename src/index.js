@@ -23,8 +23,9 @@ window.onload = () => {
   if (window.location.href.includes("player")) {
     // return navbarController();
     console.log("entered");
+  }
 
-  if (window.location.href.includes("premium")){
+  if (window.location.href.includes("premium")) {
     return navbarController();
   }
   if (
