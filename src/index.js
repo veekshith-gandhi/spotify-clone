@@ -19,9 +19,13 @@ window.onload = () => {
     console.log("im in download");
     return navbarController();
   }
+
   if (window.location.href.includes("player")) {
     // return navbarController();
     console.log("entered");
+
+  if (window.location.href.includes("premium")){
+    return navbarController();
   }
   if (
     window.location.href == "http://localhost:8080/" ||
