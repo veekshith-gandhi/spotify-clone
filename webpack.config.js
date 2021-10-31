@@ -10,7 +10,7 @@ let templates = [
   "index",
   "signup",
   "login",
-  "sorce",
+  "player",
   "download",
   "support",
   "premium",

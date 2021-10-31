@@ -1,61 +1,67 @@
-.dashLine{
-    width: 2px;
-    height: 18px;
-    margin-top: 10px;
-    background-color: white;
+.dashLine {
+  width: 2px;
+  height: 18px;
+  margin-top: 10px;
+  background-color: white;
 }
-.navFont{
-    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
-    font-size: 19px;  
+.navFont {
+  font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 19px;
 }
-.navBg{
-    background-color: black;
+.navBg {
+  background-color: black;
 }
-.navPadding{
-    padding: 16px;
+.navPadding {
+  padding: 16px;
 }
-.navBoldFont{
-    font-weight: bold;
+.navBoldFont {
+  font-weight: bold;
 }
-.spotifyLogoFont{
-    font-size: 30px;
+.spotifyLogoFont {
+  font-size: 30px;
 }
-.spotifyLogo{
-    margin-top: -15px;
+.spotifyLogo {
+  margin-top: -15px;
 }
 
+<<<<<<< HEAD
 .whiteLogo{
     filter :invert(100%)
  }
 .navbar-nav > li > a:hover{
     color: #1EC62E !important;
+=======
+.navbar-nav > li > a:hover {
+  color: #1ec62e !important;
+>>>>>>> 6b158de9019f435929442ab7c1bfbfdd94a02afd
 }
 
-.navHeight{
-    height: 100px;
-
+.navHeight {
+  height: 100px;
+}
+.whiteLogo {
+  filter: invert(100%);
 }
 
 @media only screen and (max-width: 850px) {
-    .navFont{
-        font-size: 16px;  
-    }
-    .spotifyLogoFont{
-        font-size: 25px;
-    }
+  .navFont {
+    font-size: 16px;
+  }
+  .spotifyLogoFont {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 780px) {
-    .navFont{
-        font-size: 15px;  
-    }
-    .spotifyLogoFont{
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    .temp-dist{
-        margin-right: -50px;
-        margin-left: -10px;
-    }
-
+  .navFont {
+    font-size: 15px;
+  }
+  .spotifyLogoFont {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .temp-dist {
+    margin-right: -50px;
+    margin-left: -10px;
+  }
 }

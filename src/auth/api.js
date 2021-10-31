@@ -20,7 +20,8 @@ export function handleSignUp(formData) {
       },
       body: JSON.stringify(signup),
     });
-    console.log("sign");
+    alert("sign up succesfull");
+    window.location.href = "./login.html";
   } catch (error) {
     console.log(error);
   }

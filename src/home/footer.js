@@ -1,5 +1,5 @@
-function Footer (){
-    return `<div class="footer footerFont">
+function Footer() {
+  return `<div class="footer footerFont">
     <nav><br/><br/>
     <div class="outerFlex">
     <div class ="column1">
@@ -84,7 +84,7 @@ function Footer (){
         </div>
     </div>
     </nav>
-    </div>`
+    </div>`;
 }
 
 export default Footer;
