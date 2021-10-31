@@ -1,5 +1,4 @@
 .signup-main-container {
-
   font-family: Circular Spotify;
 }
 
@@ -166,15 +165,22 @@
   display: inline-block;
   margin-top: 20px;
 }
-.login-btn-signup {
+.login-btn {
   float: right;
   margin-top: 10px;
   border-radius: 20px;
   width: 156px;
   height: 40px;
   background: #1ed760;
-  color: white;
   border: none;
+  color: white;
+}
+.login-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+}
+.login-btn:focus {
+  outline: 0 !important;
 }
 .login-checkbox-main {
   display: inline-block;
@@ -185,7 +191,7 @@
   margin-bottom: 20px;
 }
 
-/* sorce */
+/* player */
 .sorce-main-container {
   width: 100%;
   margin: auto;
@@ -227,7 +233,11 @@
 }
 .src-add-btn {
   filter: invert(100%);
+
   margin-left: 18px;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .src-btn-list {
   margin-top: 45px;
@@ -237,11 +247,12 @@
 }
 .src-components:hover {
   background-color: rgb(75, 66, 69);
-
-  width: 34%;
-  margin: auto;
-  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  /* padding: 2px; */
 }
+
+/* signup */
 .spotify-logo-signup {
   margin-top: 30px;
   display: inline-flex;
@@ -300,5 +311,4 @@
 }
 .clear {
   clear: both;
-
 }
