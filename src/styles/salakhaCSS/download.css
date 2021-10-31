@@ -107,11 +107,11 @@
 }
 
 .whiteDwnldBtn {
-    background-color:white;
+    background-color: white;
     color: #000000;
     border-radius: 500px;
     font-size: inherit;
-    padding: 14px 32px;
+    padding: 1px 50px;
 }
 .btnOfDwnld{
     font-size: 18px;

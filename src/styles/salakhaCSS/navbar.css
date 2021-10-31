@@ -24,7 +24,9 @@
     margin-top: -15px;
 }
 
-
+.whiteLogo{
+    filter :invert(100%)
+ }
 .navbar-nav > li > a:hover{
     color: #1EC62E !important;
 }

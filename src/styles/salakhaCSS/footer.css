@@ -107,3 +107,6 @@
         flex-direction: column;
      }
  }
+ .whiteLogo{
+    filter :invert(100%)
+ }
