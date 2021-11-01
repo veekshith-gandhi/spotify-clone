@@ -37,3 +37,5 @@ function dropBtn(id_name) {
 function funShow(id) {
   document.getElementById(id).classList.toggle("show");
 }
+
+console.log("Support Page")

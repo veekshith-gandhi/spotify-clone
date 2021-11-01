@@ -24,16 +24,11 @@
   margin-top: -15px;
 }
 
-<<<<<<< HEAD
 .whiteLogo{
     filter :invert(100%)
  }
 .navbar-nav > li > a:hover{
     color: #1EC62E !important;
-=======
-.navbar-nav > li > a:hover {
-  color: #1ec62e !important;
->>>>>>> 6b158de9019f435929442ab7c1bfbfdd94a02afd
 }
 
 .navHeight {

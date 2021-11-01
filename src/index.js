@@ -4,6 +4,7 @@ import "./styles/style.css";
 // import * as Home from "./home";
 import "./auth/player";
 import { navbarController } from "./home";
+import "./support.js";
 
 window.onload = () => {
   if (window.location.href.includes("signup")) {
@@ -16,7 +17,7 @@ window.onload = () => {
     return navbarController();
   }
   if (window.location.href.includes("support")) {
-    console.log("im in download");
+    console.log("im in Support");
     return navbarController();
   }
 
