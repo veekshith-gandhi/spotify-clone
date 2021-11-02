@@ -136,7 +136,7 @@
     width: 100%;
     box-sizing: border-box;
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; 
     margin-top: 0px;
     margin-bottom: 0px;
     border-radius: 4px;
