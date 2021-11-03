@@ -324,15 +324,15 @@
 }
 
 .greenListLink > li > a{
-    color: #117A37;
+    color: #117A37!important;
     text-decoration: none;
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 700;
 }
 .greenListLink > li > a:hover{
-    text-decoration: underline;
-    color: #117A37;
+    text-decoration: underline!important;
+    color: #117A37!important;
 }
 
 .distLink{
