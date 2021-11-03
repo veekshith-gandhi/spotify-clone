@@ -1,4 +1,5 @@
 import { signUpcontroller } from "./auth/signup";
+import { webplayerController } from "./auth/player";
 import "./auth/login";
 import "./styles/style.css";
 // import * as Home from "./home";
@@ -10,11 +11,15 @@ window.onload = () => {
     console.log("im in signin");
     return signUpcontroller();
   }
+  // if (window.location.href.includes("player")) {
+  //   return webplayerController();
+  // }
 
   if (window.location.href.includes("download")) {
     console.log("im in download");
     return navbarController();
   }
+
   if (window.location.href.includes("support")) {
     console.log("im in download");
     return navbarController();
@@ -24,10 +29,10 @@ window.onload = () => {
     // return navbarController();
     console.log("entered");
   }
-
   if (window.location.href.includes("premium")) {
     return navbarController();
   }
+
   if (
     window.location.href == "http://localhost:8080/" ||
     window.location.href == "http://localhost:8080/index.html"

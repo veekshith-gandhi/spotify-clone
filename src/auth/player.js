@@ -1,4 +1,1 @@
-const APIController = function () {
 
-};
-APIController();
