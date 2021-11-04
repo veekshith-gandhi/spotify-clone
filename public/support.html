@@ -13,16 +13,22 @@
     <div class="mainSupportContainer">
         <div class="headingSupport">
             <h1 class="fontSupport text-center text-light">How can we help you?</h1>
-                <div class="searchContain inputContain">
-                    <div class="searchBox">
-                        <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="inputIcon" aria-label="Search icon">
-                            <line x1="15.54" y1="15.54" x2="20.41" y2="20.41" fill="none" stroke="#181818"></line>
-                            <circle cx="10.5" cy="10.5" r="7" fill="none" stroke="#181818"></circle>
-                        </svg>
-                    </div>
-                    <input type="text" class="searchInputBox temp" aria-label="Search" placeholder=" Search" autocomplete="off" value=""></div>
+            <div class="searchContain inputContain">
+                <div class="searchBox">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="inputIcon" aria-label="Search icon">
+                        <line x1="15.54" y1="15.54" x2="20.41" y2="20.41" fill="none" stroke="#181818"></line>
+                        <circle cx="10.5" cy="10.5" r="7" fill="none" stroke="#181818"></circle>
+                    </svg>
                 </div>
-                <div class="firstDivFlex">
+                <input type="text" id="supportSearch" class="searchInputBox temp" aria-label="Search" placeholder=" Search" autocomplete="off" value="">
+                <div class="searchBox01 noCross" id="crossButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </div>
+                <div id="supportResults"></div>
+            </div><br/>
+                <div class="firstDivFlex" id="nextDiv">
                     <div class="boxSupport">
                         <h3 class="noShowSol headsSupp text-light displayAfter">TOP SOLUTIONS</h3>
                         <h3 class="headsSupp text-light dontDisplay">CHARGE HELP</h3>
@@ -37,7 +43,7 @@
                     <div class="boxSupport">
                         <h3 class="headsSupp text-light text-center dontDisplay">ACCOUNT SETTINGS</h3>
                         <a class="paraSupp" href="">Country or region settings</a></div>
-                </div><br/><br/>   
+                </div><br/>
         </div>    
     </div>
     <div class="seconSupportContainer space"><br/>
