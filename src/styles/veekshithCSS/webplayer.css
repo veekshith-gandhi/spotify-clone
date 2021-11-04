@@ -453,3 +453,9 @@ li {
   width: 27px;
   filter: invert(100%);
 }
+
+/* webplayer me */
+
+.webplayer-main-container:hover {
+  color: rgb(70, 46, 16);
+}

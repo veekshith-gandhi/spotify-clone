@@ -208,8 +208,7 @@ body {
   padding-bottom: 0.5rem;
 }
 
-li a:hover, li a:focus {
-  border-bottom: 1px solid white;
+
 }
 .whiteLogo{
   filter :invert(100%)

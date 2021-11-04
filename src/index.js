@@ -1,9 +1,8 @@
 import { signUpcontroller } from "./auth/signup";
-import { webplayerController } from "./auth/player";
+import { playerBody, playerBody2 } from "./auth/player";
 import "./auth/login";
 import "./styles/style.css";
-// import * as Home from "./home";
-import "./auth/player";
+import "./shared/webplayerbody";
 import { navbarController } from "./home";
 
 window.onload = () => {
@@ -11,10 +10,6 @@ window.onload = () => {
     console.log("im in signin");
     return signUpcontroller();
   }
-  // if (window.location.href.includes("player")) {
-  //   return webplayerController();
-  // }
-
   if (window.location.href.includes("download")) {
     console.log("im in download");
     return navbarController();
@@ -26,9 +21,12 @@ window.onload = () => {
   }
 
   if (window.location.href.includes("player")) {
-    // return navbarController();
-    console.log("entered");
+    return playerBody();
   }
+  if (window.location.href.includes("musicpage")) {
+    return playerBody2();
+  }
+
   if (window.location.href.includes("premium")) {
     return navbarController();
   }

@@ -14,6 +14,7 @@ let templates = [
   "download",
   "support",
   "premium",
+  "musicpage",
 ];
 let multipleHtmlPlugins = templates.map((name) => {
   return new HtmlWebpackPlugin({
