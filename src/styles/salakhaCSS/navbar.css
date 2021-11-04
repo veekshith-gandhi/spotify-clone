@@ -1,153 +1,153 @@
-.navBg {
+.navBg{
   background-color: black;
 }
-.navPadding {
+.navPadding{
   padding: 16px;
 }
-.navBoldFont {
+.navBoldFont{
   font-weight: bold;
 }
-.spotifyLogoFont {
+.spotifyLogoFont{
   font-size: 30px;
 }
-.spotifyLogo {
+.spotifyLogo{
   margin-top: -15px;
 }
 
-.navHeight {
+
+.navHeight{
   height: 100px;
 }
-.fsize {
+.fsize{
   font-size: 19px;
   font-weight: 700;
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
+
 @media only screen and (max-width: 986px) {
-  .fsize {
-    font-size: 17px;
-    font-weight: 700;
-    padding-top: 5px;
-    padding-bottom: 10px;
+  .fsize{
+      font-size: 17px;
+      font-weight: 700;
+      padding-top: 5px;
+      padding-bottom: 10px;
   }
-  .spaceBtwn {
-    margin-right: 25px;
+  .spaceBtwn{
+      margin-right: 25px;
   }
-  .spotifyLogoFont {
-    font-size: 25px;
+  .spotifyLogoFont{
+      font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 780px) {
-  .fsize {
-    font-size: 15px;
-    font-weight: 700;
-    padding-top: 5px;
-    padding-bottom: 10px;
+  .fsize{
+      font-size: 15px;
+      font-weight: 700;
+      padding-top: 5px;
+      padding-bottom: 10px;
   }
-  .spaceBtwn {
-    margin-right: 25px;
+  .spaceBtwn{
+      margin-right: 25px;
   }
-  .spotifyLogoFont {
-    font-size: 22px;
-    margin-top: -18px;
-    padding-top: -10px;
+  .spotifyLogoFont{
+      font-size: 22px;
+      margin-top: -18px;
+      padding-top: -10px;
   }
-  .spotifyLogo {
-    width: 25px;
-    height: 25px;
+  .spotifyLogo{
+      width: 25px;
+      height: 25px;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dashLine {
-    width: 2px;
-    height: 18px;
-    margin-top: 20px;
-    background-color: white;
+  .dashLine{
+      width: 2px;
+      height: 18px;
+      margin-top: 20px;
+      background-color: white;
   }
-  .space01 {
-    margin-top: 10px;
+  .space01{
+      margin-top: 10px;
   }
-  .spaceBtwn {
-    margin-right: 25px;
+  .spaceBtwn{
+      margin-right: 25px;
   }
-  .spaceBtwn1 {
-    margin-right: 15px;
+  .spaceBtwn1{
+      margin-right: 15px;
   }
-  .disappear {
-    display: none;
+  .disappear{
+      display: none;
   }
-  .blockCross {
-    display: none;
+  .blockCross{
+      display: none;
   }
-  .navFlex {
-    display: flex;
-    flex-direction: row;
+  .navFlex{
+      display: flex;
+      flex-direction: row;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .hamburger svg,
-  .close svg {
-    width: 100%;
-    height: 100%;
-  }
+  .hamburger svg, .close svg {
+      width: 100%;
+      height: 100%;
+    }
 
-  .hamburger,
-  .close {
-    border: none;
-    cursor: pointer;
-    /* position absolute position the icons relative to the body because they have no position relative parents*/
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 36px;
-    height: 36px;
-  }
+    .hamburger, .close {
+      border: none;
+      cursor: pointer;
+      /* position absolute position the icons relative to the body because they have no position relative parents*/
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+    }
+    
+    .hamburger {
+      background: black;
+    }
 
-  .hamburger {
-    background: black;
+    .navbars {
+      position: absolute;
+      /* a higher z-index put navbar above hamburger */
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+      /* basic menu styling*/
+      list-style: none;
+      background: black;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      /* animate slide up/down */
+      transform: translateY(-100%);
+      transition: transform 0.2s ease;
+      padding-top: 40px;
+      text-align: left;
+    }
+    
+    /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
+    
+    .navbars:target {
+      /* show navbar */
+      transform: translateY(0);
+    }
+    .dashLine{
+      width: 18px;
+      height: 2px;
+      margin-top: 10px;
+      background-color: white;
   }
-
-  .navbars {
-    position: absolute;
-    /* a higher z-index put navbar above hamburger */
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden;
-    /* basic menu styling*/
-    list-style: none;
-    background: black;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    /* animate slide up/down */
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
-    padding-top: 40px;
-    text-align: left;
-  }
-
-  /* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
-
-  .navbars:target {
-    /* show navbar */
-    transform: translateY(0);
-  }
-  .dashLine {
-    width: 18px;
-    height: 2px;
-    margin-top: 10px;
-    background-color: white;
-  }
-
-  .spaceBtwn {
-    margin-bottom: 10px;
+  
+  .spaceBtwn{
+      margin-bottom: 10px;
   }
 }
 
@@ -174,14 +174,15 @@
   color: rgb(255, 255, 255);
 }
 
-#navbar > li > a {
+
+#navbar > li > a{
   text-decoration: none;
   color: white;
 }
 
-#navbar > li > a:hover {
-  text-decoration: none !important;
-  color: #1ec62e !important;
+#navbar > li > a:hover{
+  text-decoration: none!important;
+  color: #1EC62E !important;
 }
 
 body {
@@ -190,13 +191,15 @@ body {
   width: 100%;
 }
 
+
+
 .close {
   background: black;
 }
 
-.spaceBtwn .spaceBtwn > a {
+.spaceBtwn .spaceBtwn>a {
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   font-weight: bold;
   /* remove default underline and add our own with padding and border bottom */
@@ -205,10 +208,8 @@ body {
   padding-bottom: 0.5rem;
 }
 
-li a:hover,
-li a:focus {
-  /* border-bottom: 1px solid white; */
+
 }
-.whiteLogo {
-  filter: invert(100%);
+.whiteLogo{
+  filter :invert(100%)
 }
