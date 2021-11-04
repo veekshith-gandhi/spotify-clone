@@ -10,7 +10,7 @@ export class APIController {
       params: { q: "trending" },
       headers: {
         "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-        "x-rapidapi-key": "78fb0750ffmsh4b00bcc4c98a884p1c8d38jsnf52a1de011e0",
+      
       },
     };
 
@@ -41,7 +41,7 @@ export class APIController {
       params: { q: "akon" },
       headers: {
         "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-        "x-rapidapi-key": "78fb0750ffmsh4b00bcc4c98a884p1c8d38jsnf52a1de011e0",
+      
       },
     };
 
