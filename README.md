@@ -1,15 +1,7 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 spotify clone!
 
-This project has been created using **webpack-cli**, you can now run
+### Team Members
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+- Salakha
+- Yokesh Babu
+- Veekshith
