@@ -23,7 +23,7 @@ window.onload = () => {
     return navbarController();
   }
 
-  if (window.location.href.includes("player")) {
+  if ((window.location.href.includes("player")) || (window.location.href.includes("search"))){
     return playerBody();
   }
   if (window.location.href.includes("musicpage")) {
