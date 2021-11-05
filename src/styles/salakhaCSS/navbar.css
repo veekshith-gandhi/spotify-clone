@@ -43,7 +43,6 @@
   .spotifyLogoFont{
       font-size: 25px;
   }
-}
 
 @media only screen and (max-width: 780px) {
   .fsize{
@@ -158,7 +157,6 @@
       display: flex;
       flex-direction: row;
   }
-}
 
 @media only screen and (max-width: 600px) {
   .hamburger svg, .close svg {

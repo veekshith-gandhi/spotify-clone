@@ -14,6 +14,7 @@ let templates = [
   "download",
   "support",
   "premium",
+  "search",
   "musicpage",
 ];
 let multipleHtmlPlugins = templates.map((name) => {
