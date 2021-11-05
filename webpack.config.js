@@ -14,9 +14,7 @@ let templates = [
   "download",
   "support",
   "premium",
-  "search",
   "musicpage",
-  "likedSongs",
 ];
 let multipleHtmlPlugins = templates.map((name) => {
   return new HtmlWebpackPlugin({
@@ -31,7 +29,6 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/spotify-clone/",
   },
   devServer: {
     open: true,
