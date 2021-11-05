@@ -3,7 +3,7 @@
 @import url("./yokeshCSS/premium.css");
 @import url("./yokeshCSS/search.css");
 @import url("../styles/veekshithCSS/webplayer.css");
-
+@import url("./salakhaCSS/likedSongs.css");
 @import url("./salakhaCSS/download.css");
 @import url("./salakhaCSS/support.css");
 @import url(https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css);

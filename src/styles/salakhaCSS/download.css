@@ -1,266 +1,266 @@
 .mainDownloadContainer {
-  height: 665px;
-  width: 100%;
-  background-color: #19e68c;
-}
-
-.flexDownloadContainer {
-  width: 90%;
-  height: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.imageDownloadContainer {
-  height: 170px;
-  width: 170px;
-  margin: auto;
-}
-
-.imageProperties {
-  position: relative;
-  margin: 25px 15px 15px;
-  max-width: 202px;
-}
-
-.imageDimen {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-.laptop {
-  height: 120px;
-  width: 167px;
-}
-
-.bringYourMusic {
-  word-wrap: break-word;
-}
-
-.getItFrom {
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-}
-
-.marginCenter {
-  margin: auto;
-}
-
-.linkBoxes {
-  border-radius: 5px;
-}
-
-.linkBoxes > img {
-  width: 170px;
-  height: 50px;
-  margin-right: 25px;
-  border-radius: 5px;
-}
-
-.oneAccountContainer {
-  background-color: #222326;
-  height: fit-content;
-  padding-top: 50px;
-}
-
-.dimens {
-  margin: auto;
-  width: 90%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 998px) {
-  .circleImg {
-    position: absolute;
-    width: 25%;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 665px;
+    width: 100%;
+    background-color: #19e68c;
   }
-
-  .tickMarkImage {
-    position: absolute;
-    width: 8%;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+  .flexDownloadContainer {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
   }
-}
-
-.headingDownload {
-  width: 50%;
-  height: 80;
-}
-
-.headingDownload > p {
-  font-size: 18px;
-}
-
-.whiteDwnldBtn {
-  background-color: white;
-  color: #000000;
-  border-radius: 500px;
-  font-size: inherit;
-  padding: 1px 62px;
-}
-.btnOfDwnld {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  width: 105px;
-  height: 35px;
-  background-color: white;
-  border: 0px;
-}
-
-.whiteDwnldBtn:hover {
-  transform: scale(1.1);
-}
-
-.paraDwnld {
-  box-sizing: border-box; /*The CSS box-sizing property allows us to include the 
-    padding and border in an element's total width and height.*/
-  font-family: spotify-circular, Helvetica, Arial, sans-serif;
-  display: block;
-  padding: 0px 0px 1em;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  color: black;
-}
-
-.thirdList ~ li > a {
-  color: #1ec62e;
-  text-decoration: underline;
-}
-
-.listOfLinks {
-  display: flex;
-  flex-direction: row;
-}
-
-.listOfLinks > li {
-  margin-right: 30px;
-  margin-left: 15px;
-  margin-top: 40px;
-  font-size: 20px;
-}
-
-.listOfLinks > li > a {
-  margin-left: 5px;
-}
-
-.imgContainer {
-  margin: auto;
-}
-
-.imgContainer > img {
-  width: 610.13px;
-  height: 286.71px;
-}
-
-@media only screen and (min-width: 600px) {
-  .dwndHead {
-    font-size: 55px;
-    line-height: 48px;
-    font-weight: bold;
-    word-wrap: break-word;
-    color: black;
+  
+  .imageDownloadContainer {
+    height: 170px;
+    width: 170px;
+    margin: auto;
   }
-
-  .bringYourMusicHeading {
-    margin-top: 92px;
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
+  
+  .imageProperties {
+    position: relative;
+    margin: 25px 15px 15px;
+    max-width: 202px;
   }
-
-  .paraBringUrMusic {
-    font-size: 18px;
-    font-weight: 500;
-    color: black;
-    margin-top: 34px;
+  
+  .imageDimen {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
   }
-
-  .oneAccountHeading {
-    font-size: 37px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: -0.1px;
-    margin-top: -20px;
+  
+  .laptop {
+    height: 120px;
+    width: 167px;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  .dwndHead {
-    font-size: 45px;
-    line-height: 48px;
-    font-weight: bold;
+  
+  .bringYourMusic {
     word-wrap: break-word;
   }
-
-  .bringYourMusicHeading {
-    margin-top: 92px;
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
+  
+  .getItFrom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
   }
-
-  .paraBringUrMusic {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
-    margin-top: 34px;
+  
+  .marginCenter {
+    margin: auto;
   }
+  
+  .linkBoxes {
+    border-radius: 5px;
+  }
+  
   .linkBoxes > img {
-    width: 150px;
-    height: 40px;
+    width: 170px;
+    height: 50px;
     margin-right: 25px;
     border-radius: 5px;
   }
-}
-
-@media only screen and (max-width: 786px) {
-}
-
-@media only screen and (max-width: 998px) {
-  .circleImg {
-    position: absolute;
-    width: 25%;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+  .oneAccountContainer {
+    background-color: #222326;
+    height: fit-content;
+    padding-top: 50px;
   }
-
-  .tickMarkImage {
-    position: absolute;
-    width: 8%;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .firstList ~ li {
-    list-style: none;
-  }
-  .listOfLinks {
+  
+  .dimens {
+    margin: auto;
+    width: 90%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
-}
-
-@media only screen and (min-width: 980px) {
-  .firstList ~ li {
-    color: #1db954;
+  
+  @media only screen and (min-width: 998px) {
+    .circleImg {
+      position: absolute;
+      width: 25%;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .tickMarkImage {
+      position: absolute;
+      width: 8%;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
-}
+  
+  .headingDownload {
+    width: 50%;
+    height: 80;
+  }
+  
+  .headingDownload > p {
+    font-size: 18px;
+  }
+  
+  .whiteDwnldBtn {
+    background-color: white;
+    color: #000000;
+    border-radius: 500px;
+    font-size: inherit;
+    padding: 1px 62px;
+  }
+  .btnOfDwnld {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    width: 105px;
+    height: 35px;
+    background-color: white;
+    border: 0px;
+  }
+  
+  .whiteDwnldBtn:hover {
+    transform: scale(1.1);
+  }
+  
+  .paraDwnld {
+    box-sizing: border-box; /*The CSS box-sizing property allows us to include the 
+      padding and border in an element's total width and height.*/
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    display: block;
+    padding: 0px 0px 1em;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: black;
+  }
+  
+  .thirdList ~ li > a {
+    color: #1ec62e;
+    text-decoration: underline;
+  }
+  
+  .listOfLinks {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .listOfLinks > li {
+    margin-right: 30px;
+    margin-left: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  
+  .listOfLinks > li > a {
+    margin-left: 5px;
+  }
+  
+  .imgContainer {
+    margin: auto;
+  }
+  
+  .imgContainer > img {
+    width: 610.13px;
+    height: 286.71px;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .dwndHead {
+      font-size: 55px;
+      line-height: 48px;
+      font-weight: bold;
+      word-wrap: break-word;
+      color: black;
+    }
+  
+    .bringYourMusicHeading {
+      margin-top: 92px;
+      font-size: 30px;
+      font-weight: bold;
+      color: black;
+    }
+  
+    .paraBringUrMusic {
+      font-size: 18px;
+      font-weight: 500;
+      color: black;
+      margin-top: 34px;
+    }
+  
+    .oneAccountHeading {
+      font-size: 37px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -0.1px;
+      margin-top: -20px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .dwndHead {
+      font-size: 45px;
+      line-height: 48px;
+      font-weight: bold;
+      word-wrap: break-word;
+    }
+  
+    .bringYourMusicHeading {
+      margin-top: 92px;
+      font-size: 25px;
+      font-weight: bold;
+      color: black;
+    }
+  
+    .paraBringUrMusic {
+      font-size: 16px;
+      font-weight: 500;
+      color: black;
+      margin-top: 34px;
+    }
+    .linkBoxes > img {
+      width: 150px;
+      height: 40px;
+      margin-right: 25px;
+      border-radius: 5px;
+    }
+  }
+  
+  @media only screen and (max-width: 786px) {
+  }
+  
+  @media only screen and (max-width: 998px) {
+    .circleImg {
+      position: absolute;
+      width: 25%;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .tickMarkImage {
+      position: absolute;
+      width: 8%;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .firstList ~ li {
+      list-style: none;
+    }
+    .listOfLinks {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 980px) {
+    .firstList ~ li {
+      color: #1db954;
+    }
+  }

@@ -1,0 +1,141 @@
+.flexWindow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 1000px;
+    width: 100%;
+}
+.navCol1{
+    width: 12rem;
+    height: 100%;
+    position: sticky;
+    border: 1px solid black;
+}
+.navCol2{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.topNav{
+    width: 100%;
+    height: 72px;
+    position: sticky;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+}
+.bodyOfLikedSongs{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to bottom, #513b9d, #473489, #3d2c76, #332564, #2a1e52);
+}
+
+.likedImgDimen{
+    width: 230px;
+    height: 230px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 10px;
+}
+
+.likedFontHead{
+    font-size: 92px;
+    letter-spacing: -4.85px;
+    margin-top: -19px;
+}
+.mainBodyOfLikedSongs{
+    width: 100%;
+    height: 76%;
+    background-image: linear-gradient(to bottom, #1c1631, #171522, #15131a, #121212, #121212);
+}
+.colorOfPlayButton{
+    color: #1DB954;
+    background-color: white;
+    border-radius: 50%;
+}
+.playButtonLikedSong:hover{
+    transform: scale(1.1);
+}
+.songListDiv{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(47,44,58);
+}
+.titleList{
+    display: flex;
+    flex-direction: row;
+}
+.titleList > li{
+    font-size: 14px;
+}
+.songBox1{
+    width: 5%;
+}
+.songBox2{
+    width: 32%;
+}
+.songBox02{
+    width:35%;
+}
+.songBox3{
+    width: 25%;
+}
+songBox3{
+    width: 30%;
+}
+.songBox4{
+    width: 25%;
+}
+.songBox04{
+    width: 20%;
+}
+.songBox5{
+    width: 10%;
+}
+.songBox05{
+    width: 5%;
+}
+.songBox06{
+    width: 10%;
+}
+.likedBorder{
+    border-top: 1px solid rgb(47,44,58);
+}
+.likeButtonInLikedPg{
+    color: #1DB954;
+}
+.songsThatAreLiked{
+    display: flex;
+    flex-direction: column;
+}
+.titleHeight > li{
+    height: fit-content;
+}
+.songBodyHeight{
+    padding-top: 50px;
+    height: fit-content;
+}
+.fontOfNameOfAlbum{
+    font-size: 18;
+    margin-bottom: -2.5px;
+}
+.fontOfNameOfArtist{
+    font-size: 16;
+    margin-bottom:-1px;
+}
+.likedImgSize{
+    width: 50px;
+    height: 50px;
+}
+.thisClass:hover{
+    height:auto;
+    background-color: #2C2B30;
+    border-radius: 5px;
+}
+
