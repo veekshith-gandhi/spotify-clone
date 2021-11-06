@@ -52,7 +52,7 @@ export function player() {
           <ul class="side-list">
             <li class="side-li2"><a href="#">Made For You</a></li>
             <li class="side-li2"><a href="#">Recently Played</a></li>
-            <li class="side-li2"><a href="#">Liked Songs</a></li>
+            <li class="side-li2"><a href="likedSongs.html">Liked Songs</a></li>
             <li class="side-li2"><a href="#">Albums</a></li>
           </ul>
           <br />
