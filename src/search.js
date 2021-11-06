@@ -2,6 +2,7 @@ import {
     playerBody
 } from "./auth/player";
 var axios = require("axios").default;
+var songs = [];
 export default function search() {
     playerBody();
     var searchInput = document.querySelector(".search-input");
@@ -13,6 +14,7 @@ export default function search() {
     <div style="flex-basis: 30%; text-align:center;">ALBUM</div>
     <div style="flex-basis: 15%; text-align:center;">Duration</div>
 </div>`
+    // content.addEventListener("click",playSong);
     searchInput.addEventListener("keyup", function (event) {
         if (event.keyCode == 13) {
             /*fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchInput.value}`, {
@@ -54,6 +56,7 @@ export default function search() {
                 var dt = response.data.data;
                 // console.log(dt);
                 var i=1;
+                songs = [];
                 content.innerHTML = `<div style="display: flex;" >
     <div style="flex-basis: 10%; text-align:center;">#</div>
     <div style="flex-basis: 45%; text-align:center;">TITLE</div>
@@ -73,9 +76,9 @@ export default function search() {
                     trackDetails.style.flexBasis = "45%"
                     var img = document.createElement("img");
                     img.src = track.album.cover_small;
-                    console.log(img.src,track.album.cover_small);
+                    // console.log(img.src,track.album.cover_small);
                     var p = document.createElement("p");
-                    p.textContent = track.album.title;
+                    p.textContent = track.title;
                     p.style.marginLeft = "10px"
                     p.style.textAlign = "center"
                     trackDetails.append(img,p);
@@ -86,12 +89,23 @@ export default function search() {
                     var duration = document.createElement("div");
                     duration.style.flexBasis = "15%"
                     duration.style.textAlign = "center"
-                    id.textContent = i++;
+                    id.textContent = i;
                     album.textContent=track.album.title;
                     duration.textContent = "0.30"
                     container.append(id,trackDetails,album,duration);
                     content.append(container);
-                    console.log(track);
+                    songs.push(track.preview);
+                    id.id = i;
+                    trackDetails.id = i;
+                    img.id = i;
+                    p.id = i;
+                    album.id = i;
+                    duration.id = i;
+                    i++;
+                    // console.log(track.preview);
+                    container.addEventListener("click",function(){
+                        playSong();
+                    })
                 }
                 console.log(response.data);
             }).catch(function (error) {
@@ -122,4 +136,19 @@ export default function search() {
     // let accountAndsongNumber = document.getElementById("accountAndsongNumber");
     // accountAndsongNumber.innerHTML = `<small><b>${username}</b>&nbsp;.&nbsp;${count}&nbsp;songs</small>`;
     // i++;
+}
+var playing = false;
+var audio;
+function playSong(){
+    // console.log(event.target.id);
+    // var audio;
+    if(playing){
+        audio.pause();
+    }
+    var songId = Number(event.target.id)-1;
+    var songPath = songs[songId];
+    audio = new Audio(songPath);
+    audio.play();
+    playing = true;
+    console.log(audio.duration);
 }
