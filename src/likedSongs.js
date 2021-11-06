@@ -5,14 +5,14 @@ function songBeingLiked(nameOfSong,picOfSong,nameOfAlbum,nameOfArtist,timeOfSong
     console.log(i)
     let likedSongs = document.getElementById("likedSongs");
     
-    /*calculating the time when song is liked*/
+    /calculating the time when song is liked/
     let dateAdded = new Date();
     console.log(dateAdded)
     let dateToday = dateAdded.getDate()+"-"+(dateAdded.getMonth()+1)+"-"+dateAdded.getFullYear();
     console.log(dateToday)
 
 
-    /*creating the list of songs*/
+    /creating the list of songs/
     let frag = document.createElement('div');
     frag.innerHTML = `
     <ul class="text-light titleList titleHeight mb-3 thisClass" type="none">
