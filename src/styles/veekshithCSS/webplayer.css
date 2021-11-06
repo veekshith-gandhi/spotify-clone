@@ -66,14 +66,14 @@ li {
   list-style: none;
 }
 
-.green-li {
-  /* border-left: 4px solid #38a169; */
+/* .green-li {
+  border-left: 4px solid #38a169;
+}  */
+/* .one > li:active{
   background-color: #282828;
   border-radius: 2px;
   border-left : 4px solid #38a169
-} 
-/* .one > li:active{ */
-/* } */
+} */
 #br-li {
   margin-left: 0.2rem;
 }
