@@ -127,7 +127,7 @@ export function player() {
           </div>
           <div class="top-bar-r">
             <img src="https://api.deezer.com/album/248054/image" alt="" />
-            <h3 style="font-size: large">veekshith</h3>
+            <h3 id="userid-spotify" style="font-size: large">veekshith</h3>
             <svg
               fill="none"
               stroke-linecap="round"
