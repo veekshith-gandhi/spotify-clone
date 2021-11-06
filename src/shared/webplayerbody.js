@@ -149,14 +149,13 @@ export function player() {
     </div>
     <div class="bottom">
       <div class="bottom-left">
-        <a href="#"
-          ><img
+          <img id="songImg"
             src="https://e-cdns-images.dzcdn.net/images/cover/a18d1bf2734af6e550b8f1cfa24cd6a5/56x56-000000-80-0-0.jpg"
             alt=""
-        /></a>
+          />
         <div class="song-name">
           <div class="sng-name">
-            <a href="#">akon</a>
+            <a href="#" id="sgName">akon</a>
             <svg
               fill="none"
               stroke-linecap="round"
@@ -170,7 +169,7 @@ export function player() {
               ></path>
             </svg>
           </div>
-          <div class="artist-name"><a href="#"> Joyner Lucas</a></div>
+          <div class="artist-name"><a href="#" id="art-name"> Joyner Lucas</a></div>
         </div>
       </div>
       <div class="bottom-center">
@@ -179,22 +178,27 @@ export function player() {
           <ion-icon class="player-icon" name="play-skip-back"></ion-icon>
           <ion-icon
             class="player-icon-m"
-            name="play-circle-outline"
+            name="stop-circle-outline"
           ></ion-icon>
           <ion-icon class="player-icon" name="play-skip-forward"></ion-icon>
           <ion-icon class="player-icon" name="repeat"></ion-icon>
         </div>
-        <div class="player">
-          <div class="timer-l">1:50</div>
-          <div class="progress-bar"></div>
-          <div class="timer-l">3:50</div>
-        </div>
+        <div class="song_slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"
+          value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+      </div>
+      <div class="volume_slider_container">
+        <i class="fa fa-volume-down" style="margin-right:5px"></i>
+        <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up style="margin-left:5px""></i>
       </div>
       <div class="bottom-right">
         <ion-icon class="vol-icon" name="reorder-three-outline"></ion-icon>
         <ion-icon class="vol-icon" name="tv-outline"></ion-icon>
-        <ion-icon class="vol-icon" name="volume-low-outline"></ion-icon>
-        <div class="volume-bar"></div>
       </div>
     </div>
   </div>`;
