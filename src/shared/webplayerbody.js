@@ -16,7 +16,7 @@ export function player() {
         <ul class="one">
           <li class="green-li">
             <a
-              href="#"
+              href="player.html"
               class="side-a"
               style="text-decoration: none"
               id="home-li"
@@ -29,7 +29,7 @@ export function player() {
             </a>
           </li>
           <li id="br-li">
-            <a href="#" class="side-a" style="text-decoration: none">
+            <a href="search.html" class="side-a" style="text-decoration: none">
               <img
                 class="src-home-logo"
                 src="https://img.icons8.com/ios/50/000000/search--v1.png"
