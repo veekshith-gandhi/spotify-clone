@@ -137,8 +137,8 @@
               </div>
             </div>
             <div class="top-bar-r">
-              <img src="https://api.deezer.com/album/248054/image" alt="" />
-              <h3 style="font-size: large">veekshith</h3>
+              <img src="https://aui.atlassian.com/aui/latest/docs/images/avatar-person.svg" alt="" />
+              <h3 style="font-size: large" id="username"></h3>
               <svg
                 fill="none"
                 stroke-linecap="round"
@@ -238,4 +238,19 @@
     </div>
   </body>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script>
+    var username = document.getElementById("username");
+    var id = localStorage.getItem("id");
+    fetch(`http://localhost:8000/users?id=${id}`)
+    .then((res)=> {
+        console.log(res);
+        return res.json()
+    })
+    // .then((res) => res.json())
+    .then((res)=>{
+        console.log(res);
+        username.textContent = res[0].profileName;
+    })
+    .catch(err=>console.log(err))
+  </script>
 </html>

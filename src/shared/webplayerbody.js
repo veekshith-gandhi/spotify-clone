@@ -126,8 +126,8 @@ export function player() {
             </div>
           </div>
           <div class="top-bar-r">
-            <img src="https://api.deezer.com/album/248054/image" alt="" />
-            <h3 style="font-size: large">veekshith</h3>
+            <img src="https://aui.atlassian.com/aui/latest/docs/images/avatar-person.svg" alt="" />
+            <h3 id="username" style="font-size: large"></h3>
             <svg
               fill="none"
               stroke-linecap="round"

@@ -98,13 +98,13 @@ li {
 }
 .seek_slider, .volume_slider {
   /* -webkit-appearance: none;
-  -moz-appearance: none;*/
+  -moz-appearance: none; */
   appearance: none;
   height: 5px;
   background: black;
   opacity: 0.7;
-  /* -webkit-transition: .2s; */
-  /*transition: opacity .2s; */
+  /* -webkit-transition: .2s;
+  transition: opacity .2s; */
 }
 /* .seek_slider{
   width: 400px;
