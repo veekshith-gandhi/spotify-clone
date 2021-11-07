@@ -193,7 +193,7 @@ export function player() {
       <div class="volume_slider_container">
         <i class="fa fa-volume-down" style="margin-right:5px"></i>
         <input type="range" min="1" max="100"
-        value="99" class="volume_slider" onchange="setVolume()">
+        value="99" class="volume_slider">
         <i class="fa fa-volume-up style="margin-left:5px""></i>
       </div>
       <div class="bottom-right">
