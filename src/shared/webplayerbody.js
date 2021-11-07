@@ -186,7 +186,7 @@ export function player() {
         <div class="song_slider_container">
         <div class="current-time">00:00</div>
         <input type="range" min="1" max="100"
-          value="0" class="seek_slider" onchange="seekTo()">
+          value="0" class="seek_slider">
         <div class="total-duration">00:00</div>
       </div>
       </div>
