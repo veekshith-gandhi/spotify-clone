@@ -164,12 +164,14 @@ export default function search() {
     var artName = document.getElementById("art-name")
     var pausePlay = document.querySelector(".player-icon-m")
     var total_duration = document.querySelector(".total-duration");
+    var updateTimer;
     /*function check(){
         audio = new Audio(songPath);
         if(isPlaying){
             audio.pause();
         }
     }*/
+
     function playSong() {
         // console.log(event.target.id);
         // var audio;
@@ -185,6 +187,7 @@ export default function search() {
         audio = new Audio(songPath);
         audio.play();
         playing = true;
+        updateTimer = setInterval(seekUpdate, 1000);
         pausePlay.removeAttribute("name");
         pausePlay.setAttribute("name","pause-circle-outline");
         pausePlay.addEventListener("click",playpauseTrack);
@@ -215,6 +218,27 @@ export default function search() {
         // Set the volume according to the
         // percentage of the volume slider set
         audio.volume = volume_slider.value / 100;
+    }
+    var seekto = 0;
+    var seek_slider = document.querySelector(".seek_slider");
+    seek_slider.addEventListener("change",seekTo);
+    var current_time = document.querySelector(".current-time")
+    current_time.textContent = "00:00";
+    function seekTo() {
+      // Calculate the seek position by the
+      // percentage of the seek slider
+      // and get the relative duration to the track
+      seekto = audio.duration * (seek_slider.value / 100);
+      // Set the current track position to the calculated seek position
+      audio.currentTime = seekto;
+      current_time.textContent = `0.${parseInt(seekto)}`;
+    }
+    function seekUpdate() {
+        let seekPosition = 0;
+        // Check if the current track duration is a legible number
+          seekPosition = audio.currentTime * (100 / audio.duration);
+          seek_slider.value = seekPosition;
+          current_time.textContent = `0.${parseInt(audio.currentTime)}`;
     }
 }
   function nextTrack() {
