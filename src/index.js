@@ -6,6 +6,7 @@ import "./shared/webplayerbody";
 import { navbarController } from "./home";
 import {supportController} from "./support.js";
 import search from "./search.js"
+import likedSongs from "./likedSongs.js"
 
 window.onload = () => {
   if (window.location.href.includes("signup")) {
@@ -32,7 +33,9 @@ window.onload = () => {
   if (window.location.href.includes("musicpage")) {
     return playerBody2();
   }
-
+  if (window.location.href.includes("likedSongs")) {
+    return likedSongs();
+  }
   if (window.location.href.includes("premium")) {
     return navbarController();
   }

@@ -156,18 +156,20 @@ export function player() {
         <div class="song-name">
           <div class="sng-name">
             <a href="#" id="sgName">akon</a>
-            <svg
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
+            <div id="likeSong">
+              <svg
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-              ></path>
-            </svg>
+                ></path>
+              </svg>
+            </div>
           </div>
           <div class="artist-name"><a href="#" id="art-name"> Joyner Lucas</a></div>
         </div>

@@ -3,6 +3,8 @@ import {
 } from "./auth/player";
 var axios = require("axios").default;
 var songs = [];
+var refId;
+var likedSongSet = [];
 // function Payload(){
 //     t
 // }
@@ -164,7 +166,9 @@ export default function search() {
     var artName = document.getElementById("art-name")
     var pausePlay = document.querySelector(".player-icon-m")
     var total_duration = document.querySelector(".total-duration");
+    var id = localStorage.getItem("id")
     var updateTimer;
+    // var currTrackId;
     /*function check(){
         audio = new Audio(songPath);
         if(isPlaying){
@@ -178,6 +182,7 @@ export default function search() {
         if (playing) {
             audio.pause();
         }
+        refId = event.target.id
         var songId = Number(event.target.id) - 1;
         var songPath = songs[songId].songURL;
         console.log(songIg);
@@ -191,6 +196,7 @@ export default function search() {
         pausePlay.removeAttribute("name");
         pausePlay.setAttribute("name","pause-circle-outline");
         pausePlay.addEventListener("click",playpauseTrack);
+        postLikes();
         audio.addEventListener("loadeddata",()=>{
             total_duration.textContent = (audio.duration/100).toFixed(2);
             console.log(audio.duration);
@@ -240,4 +246,86 @@ export default function search() {
           seek_slider.value = seekPosition;
           current_time.textContent = `0.${parseInt(audio.currentTime)}`;
     }
+    var likeSong = document.getElementById("likeSong");
+    likeSong.addEventListener("click",likeHandle);
+    console.log(refId);
+    /*function learnLoop(){
+        fetch(`http://localhost:8000/users?id=1`)
+        .then((res)=> {
+            console.log(res);
+            return res.json()
+        })
+        .then((res)=>{
+            console.log(res[0].likedsongs);
+        })
+    }
+    learnLoop();*/
+    var obj = {}
+    function likeHandle(){
+        // var isLikedPresent = https://localhost:8000/users?id=1
+        likedSongSet.push(songs[refId-1]);
+        if(obj.likedsongs){
+            obj.likedsongs.push(songs[refId-1]);
+        }
+        else{
+            obj.likedsongs = likedSongSet;
+        }
+        axios.patch(`http://localhost:8000/users/${id}`,obj)
+        /*{
+            headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(obj),
+        })
+        .then(res=>res.json())
+        .then((res)=>{
+            console.log("Success",res);
+            // if(!res[0].likedsongs){
+                // console.log("no liked songs");
+            // }
+            // console.log(res[0].likedsongs);
+        })*/
+    }
+    // likeHandle();
+    function postLikes(){
+        fetch(`http://localhost:8000/users?id=${id}`)
+        .then(response => response.json())
+            .then(data => {
+                obj = data[0];
+              console.log(obj);
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+    }
+        /*fetch("http://localhost:8000/users?id=2",{
+            method : "POST",
+            headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(songs),
+        })
+        .then(response => response.json())
+            .then(data => {
+              console.log('Success:', data);
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+    }*/
+
+        /*fetch(`http://localhost:8000/users?id=1`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(songs[refId]),
+            })
+            .then(response => response.json())
+            .then(data => {
+              console.log('Success:', data);
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });*/
 }
