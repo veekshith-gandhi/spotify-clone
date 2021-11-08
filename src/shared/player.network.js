@@ -55,6 +55,41 @@ export class APIController {
         console.error(error);
       });
   }
+  static sideBar(){
+    const contentArea = document.querySelector(".webplayer-content-area");
+    contentArea.innerHTML = `<div class="bodyOfLikedSongs">
+    <div class="row">
+        <img class="img-fluid likedImgDimen shadow-lg" src="https://i.pinimg.com/originals/07/74/a4/0774a492388967e2b5b6d65b95f3fd1a.png"/>
+        <div class="col-auto mt-4"><br/><br/><br/><br/>
+            <h5 class="text-white ml-2"><small><b>PLAYLIST</b></small></h5>
+            <h1 class="text-white likedFontHead"><b>Liked Songs</b></h1>
+        </div>
+    </div>
+    </div> -->
+<div class="mainBodyOfLikedSongs">
+    <br/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-play-circle-fill colorOfPlayButton playButtonLikedSong ml-5" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+        </svg>
+    <br/>
+    <div class="songListDiv ml-4 mr-4 mt-3">
+        <ul class="text-light titleList titleHeight" type="none">
+            <li class="songBox1 pl-2">#</li>
+            <li class="songBox2">TITLE</li>
+            <li class="songBox3">ALBUM</li>
+            <li class="songBox4">DATE ADDED</li>
+            <li class="songBox5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock text-light" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg></li>
+        </ul>
+    </div>
+    <div class="songsThatAreLiked ml-4 mr-4 mt-3" id="likedSongs"></div>
+</div></div>
+</div>
+</div>
+</div>`;
+  }
 }
 
 const creatCardOfArtist = (res) => {
