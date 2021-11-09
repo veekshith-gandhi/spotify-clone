@@ -187,8 +187,13 @@ export function supportController(){
       supportResults.append(nextDiv);
   }
 
-  window.addEventListener("load",function() {
+  function handleDebouncing() {
     let searchSupport = document.getElementById("supportSearch");
   
     searchSupport.addEventListener('input',handleDebounce)//adding an event to call function handleDebounce on input.
-  })
+  }
+
+  if (window.location.href == "http://localhost:8080/support.html") {
+    handleDebouncing();
+  // return navbarController();
+  }

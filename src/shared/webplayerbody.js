@@ -16,7 +16,7 @@ export function player() {
         <ul class="one">
           <li class="green-li">
             <a
-              href="#"
+              href="player.html"
               class="side-a"
               style="text-decoration: none"
               id="home-li"
@@ -29,7 +29,7 @@ export function player() {
             </a>
           </li>
           <li id="br-li">
-            <a href="#" class="side-a" style="text-decoration: none">
+            <a href="search.html" class="side-a" style="text-decoration: none">
               <img
                 class="src-home-logo"
                 src="https://img.icons8.com/ios/50/000000/search--v1.png"
@@ -52,7 +52,7 @@ export function player() {
           <ul class="side-list">
             <li class="side-li2"><a href="#">Made For You</a></li>
             <li class="side-li2"><a href="#">Recently Played</a></li>
-            <li class="side-li2"><a href="#">Liked Songs</a></li>
+            <li class="side-li2"><a href="likedSongs.html">Liked Songs</a></li>
             <li class="side-li2"><a href="#">Albums</a></li>
           </ul>
           <br />
@@ -126,8 +126,8 @@ export function player() {
             </div>
           </div>
           <div class="top-bar-r">
-            <img src="https://api.deezer.com/album/248054/image" alt="" />
-            <h3 id="userid-spotify" style="font-size: large">veekshith</h3>
+            <img src="https://aui.atlassian.com/aui/latest/docs/images/avatar-person.svg" alt="" />
+            <h3 id="username" style="font-size: large"></h3>
             <svg
               fill="none"
               stroke-linecap="round"
@@ -149,28 +149,29 @@ export function player() {
     </div>
     <div class="bottom">
       <div class="bottom-left">
-        <a href="#"
-          ><img
+          <img id="songImg"
             src="https://e-cdns-images.dzcdn.net/images/cover/a18d1bf2734af6e550b8f1cfa24cd6a5/56x56-000000-80-0-0.jpg"
             alt=""
-        /></a>
+          />
         <div class="song-name">
           <div class="sng-name">
-            <a href="#">akon</a>
-            <svg
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
+            <a href="#" id="sgName">akon</a>
+            <div id="likeSong">
+              <svg
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-              ></path>
-            </svg>
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="artist-name"><a href="#"> Joyner Lucas</a></div>
+          <div class="artist-name"><a href="#" id="art-name"> Joyner Lucas</a></div>
         </div>
       </div>
       <div class="bottom-center">
@@ -179,22 +180,27 @@ export function player() {
           <ion-icon class="player-icon" name="play-skip-back"></ion-icon>
           <ion-icon
             class="player-icon-m"
-            name="play-circle-outline"
+            name="stop-circle-outline"
           ></ion-icon>
           <ion-icon class="player-icon" name="play-skip-forward"></ion-icon>
           <ion-icon class="player-icon" name="repeat"></ion-icon>
         </div>
-        <div class="player">
-          <div class="timer-l">1:50</div>
-          <div class="progress-bar"></div>
-          <div class="timer-l">3:50</div>
-        </div>
+        <div class="song_slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"
+          value="0" class="seek_slider">
+        <div class="total-duration">00:00</div>
+      </div>
+      </div>
+      <div class="volume_slider_container">
+        <i class="fa fa-volume-down" style="margin-right:5px"></i>
+        <input type="range" min="1" max="100"
+        value="99" class="volume_slider">
+        <i class="fa fa-volume-up style="margin-left:5px""></i>
       </div>
       <div class="bottom-right">
         <ion-icon class="vol-icon" name="reorder-three-outline"></ion-icon>
         <ion-icon class="vol-icon" name="tv-outline"></ion-icon>
-        <ion-icon class="vol-icon" name="volume-low-outline"></ion-icon>
-        <div class="volume-bar"></div>
       </div>
     </div>
   </div>`;

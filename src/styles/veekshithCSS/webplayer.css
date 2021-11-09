@@ -4,6 +4,10 @@
   --gray-700: #282828;
 }
 
+.green-li:active{
+  background-color: #282828;
+  border-radius: 5px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -62,8 +66,74 @@ li {
   list-style: none;
 }
 
-.green-li {
+/* .green-li {
   border-left: 4px solid #38a169;
+}  */
+/* .one > li:active{
+  background-color: #282828;
+  border-radius: 2px;
+  border-left : 4px solid #38a169
+} */
+.song_slider_container {
+  width: 700px;
+  /* max-width: 400px; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.volume_slider_container{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Modify the appearance of the slider */
+.current-time{
+  margin-right: 5px;
+}
+.total-duration{
+  margin-left: 5px;
+}
+.seek_slider, .volume_slider {
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  /* -webkit-transition: .2s;
+  transition: opacity .2s; */
+}
+/* .seek_slider{
+  width: 400px;
+} */
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* appearance: none; */
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+  
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+  
+.seek_slider {
+  width: 90%;
+}
+  
+.volume_slider {
+  width: 100%;
 }
 #br-li {
   margin-left: 0.2rem;
@@ -346,6 +416,7 @@ li {
 }
 .song-name {
   margin-left: 0.75rem;
+  width: 130px;
 }
 .sng-name {
   display: flex;

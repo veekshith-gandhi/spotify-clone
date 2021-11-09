@@ -25,6 +25,7 @@ function handleLogindetails(email, password) {
       res.forEach((element) => {
         if (email == element.email && password == element.password) {
           credential = true;
+          localStorage.setItem("id",element.id);
           alert("succesful");
         }
       });
